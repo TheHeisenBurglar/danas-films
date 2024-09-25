@@ -17,6 +17,6 @@ export async function GET() {
     })
     const res = await fetch(`http://www.omdbapi.com/?apikey=8fc3abbc&${params}`)
     const movie = await res.json()
-    console.log(getRandomMovie())
+    console.log(movie)
     return json(movie);
 }
